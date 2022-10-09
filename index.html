@@ -67,18 +67,17 @@
 
 	</head>
 	<body onclick="initSong()">
-		
-	<div class="fh5co-loader"></div>
+	<div class="fh5co-loader" ></div>
 	<div id="page">
 	<nav class="fh5co-nav" role="navigation">
 		<div class="container">
 			<div class="row">
 				<div class="col-xs-2">
-					<div id="fh5co-logo"><a href="index.html">Invitation<strong>.</strong></a></div>
+					<div id="fh5co-logo"><a href="#">Invitation<strong>.</strong></a></div>
 				</div>
 				<div class="col-xs-10 text-right menu-1">
 					<ul>
-						<li class="active"><a href="index.html">Home</a></li>
+						<li class="active"><a href="#">Home</a></li>
 						<li class="active"><a href="#" onclick="playSongs()">Toggle Music</a></li>
 						<!--	<li><a href="about.html">Story</a></li>
                             <li class="has-dropdown">
@@ -130,9 +129,12 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-md-8 col-md-offset-2 text-center fh5co-heading animate-box">
-					<h2>Hello!</h2>
+					<h2>#DiNi</h2>
 					<h3>October 31st, 2022@ Ragunath Palace,G.T.Road,Aligarh</h3>
 					<p>We invited you to celebrate the engagement</p>
+					<div class="col-md-6 col-md-offset-2 text-center">
+						<img src="images/ring1.gif" alt="ring" class="img-responsive" style="margin-left:38%">
+					</div>
 				</div>
 			</div>
 			<div class="couple-wrap animate-box">
@@ -142,7 +144,7 @@
 					</div>
 					<div class="desc-groom">
 						<h3>Nishant Varshney</h3>
-						<p>An Enginner by profession, A poet by heart! Getting fall for Madhvi(Dimple)</p>
+						<p>An Engineer by profession, A poet by heart! Getting fall for Madhvi(Dimple)</p>
 					</div>
 				</div>
 				<p class="heart text-center"><i class="icon-heart2"></i></p>
@@ -574,7 +576,7 @@
 						<small class="block">&copy; 2022 Nishant Varshney. All Rights Reserved.</small>
 						<small class="block">Designed by <a href="#" target="_blank">Nishant & Dimple</a></small>
 					</p>
-					<p>
+					<!--<p>
 						<ul class="fh5co-social-icons">
 							<li><a href="#"><i class="icon-twitter"></i></a></li>
 							<li><a href="#"><i class="icon-facebook"></i></a></li>
@@ -582,6 +584,7 @@
 							<li><a href="#"><i class="icon-dribbble"></i></a></li>
 						</ul>
 					</p>
+					-->
 				</div>
 			</div>
 
@@ -592,7 +595,7 @@
 	<div class="gototop js-top">
 		<a href="#" class="js-gotop"><i class="icon-arrow-up"></i></a>
 	</div>
-	
+	</div>
 	<!-- jQuery -->
 	<script src="js/jquery.min.js"></script>
 	<!-- jQuery Easing -->
@@ -618,8 +621,9 @@
 	<script src="js/main.js"></script>
 
 	<script>
-	var date = new Date("October 31, 2022 12:00:00");
+	var date = new Date("October 31, 2022 15:00:00");
 	var d = new Date(date.getTime());
+	alert(d);
    // var d = new Date(new Date().getTime() + 65 * 120 * 120 * 2000);
 
     // default example
@@ -645,6 +649,7 @@
 }
 
 function playSongs() {
+   // alert("playSongs");
     if(!window.weddingSong) {
         window.weddingSong = new Audio('music/song1.mp3');
         window.weddingSong.loop = true;
@@ -657,6 +662,7 @@ function playSongs() {
         else window.weddingSong.pause();
     }
 }
+
 </script>
 
 	</body>
